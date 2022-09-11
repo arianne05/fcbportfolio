@@ -1,0 +1,81 @@
+/*
+	SYNTAX:
+		selector{
+			property:value;
+		}
+*/
+
+*{ 
+	/* asterik is called as Universal Selector which targets all elements (least prioritized selector)*/
+	font-family: 'Roboto', sans-serif;
+
+
+}
+
+h1, h2, h5{
+	font-family: 'Montserrat', sans-serif;
+}
+
+img{
+	width: 200px;
+	height: 200px;
+	border: 3px solid #007bff;
+	border-radius: 100%;
+	margin-top: 40%;
+}
+
+/*to use ID use hashtag*/
+#landing {
+	/*vh - viewport height; no definite height; depends on the height of the user monitor/screen; 80% of your monitor height will be used or allotted*/
+	height: 50vh; 
+	/*display:flex; - allows us to align elements horizontally and vertically*/
+	display: flex;
+	/*flex-direction:column or rows; - aligns flex item horizontal or vertical*/
+	flex-direction: column;
+	/*align-items:center; - align flex items horizontally*/
+	align-items: center;
+	/*justify-content: center; - align flex items vertically*/
+	justify-content: center;
+	padding-top: 20%;
+}
+
+#gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	margin-top: 25%;
+
+	border-radius: 6px;
+	color: #fff08d;
+}
+
+ul {
+	/*list-style:none; - removed bullets*/
+	list-style: none;
+	padding: 0;
+}
+html{
+	/*scroll-bahavior:smooth; - prevent instant redirection; it will glide smoothly unto the navigation*/
+	scroll-behavior: smooth;
+}
+
+h2, h5 {
+	color:#007bff;
+}
+
+p {
+	color:#808080;
+	font-size: 13px;
+}
+
+/*to use class use period*/
+.tools {
+	border: 5px solid #f2f2f2;
+	height: 200px;
+	/*when you use percentage it will depends on parent element; border width will be affected; parent element yung nagwra-wrap sakanila o nag co-contain*/
+	width: 75%;
+	margin: 25px;
+	padding: 25px;
+}
